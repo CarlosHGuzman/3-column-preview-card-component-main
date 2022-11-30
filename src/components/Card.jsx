@@ -8,11 +8,11 @@ const Card = ({db, backgroundColor, icon}) => {
         setColorBtn(valor&&{color: backgroundColor.backgroundColor})
     }
     return (
-        <article style={backgroundColor} className="card" role={`card-${title}`}>
-            <img src={icon} alt="icon-car"></img>
+        <article style={backgroundColor} className="card" role="article">
+            <img src={icon} alt="icon-car" role="img"></img>
             <h1 className="card-title"> {title}</h1>
             <p className="card-description"> {description}</p>
-            <button onMouseUpCapture={() => {changeColorBtn(true)}} style={colorBtn}className="btn">Learn More</button>
+            <button onMouseUpCapture={() => {changeColorBtn(true)}} style={colorBtn} className="btn" role="button">Learn More</button>
         </article>
     )
 }

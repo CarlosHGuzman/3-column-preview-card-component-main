@@ -9,15 +9,15 @@ function App() {
   const colorsCard = [{backgroundColor:"hsl(31, 77%, 52%)"}, {backgroundColor:"hsl(184, 100%, 22%)"}, {backgroundColor:"hsl(179, 100%, 13%)"}]
 
   return (
-    <div className="App" role="content-app">
+    <div className="App" role="application">
       <div className="cards" role="main">
         <Card db = {db["card-1"]} backgroundColor = {colorsCard[0]} icon = {icon1}/>
         <Card db = {db["card-2"]} backgroundColor = {colorsCard[1]} icon = {icon3}/>
         <Card db = {db["card-3"]} backgroundColor = {colorsCard[2]} icon = {icon2}/>
       </div> 
-      <div className="attribution" role="footer">
-        Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
-        Coded by <a href="https://portafolio-carlos-guzman.netlify.app/">Carlos Guzmán</a>.
+      <div className="attribution" role="navigation">
+        Challenge by <a role="link" href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+        Coded by <a role="link" href="https://portafolio-carlos-guzman.netlify.app/">Carlos Guzmán</a>.
     </div>
     </div>
   )
